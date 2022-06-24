@@ -30,6 +30,8 @@ const FakeCurrencyInput = React.forwardRef<TextInput, FakeCurrencyInputProps>(
     return (
       <View style={[containerStyle, styles.inputContainer]}>
         <TextWithCursor
+          numberOfLines={1}
+          adjustsFontSizeToFit        
           style={style}
           cursorVisible={focused && !caretHidden}
           cursorProps={{ style: { color: caretColor || selectionColor } }}
